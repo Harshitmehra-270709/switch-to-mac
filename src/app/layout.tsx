@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Navbar } from "@/components/layout/Navbar";
 
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { CommandMenu } from "@/components/layout/CommandMenu";
 
 export default function RootLayout({
