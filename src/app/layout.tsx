@@ -33,6 +33,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Navbar } from "@/components/layout/Navbar";
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { CommandMenu } from "@/components/layout/CommandMenu";
 
 export default function RootLayout({
@@ -61,6 +62,7 @@ export default function RootLayout({
         <CommandMenu />
         {children}
         <Analytics />
+        <SpeedInsights />
         <footer className="py-8 text-center text-sm text-white/20">
           <p>&copy; {new Date().getFullYear()} Switch to Mac. <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a></p>
         </footer>
